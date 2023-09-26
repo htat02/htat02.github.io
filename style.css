@@ -1,0 +1,67 @@
+p1, p2, h1, h2, h3, h4, h5, ul, nav, th,td{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    column-count: 3;
+    column-gap: 40px;
+    column-fill: balance;
+    column-rule-style: solid;
+    column-rule-color:black;
+}
+
+h1{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    width: 1470px;
+    height: 20px;
+
+}
+
+body {
+    background-color:#f8f8ff;
+}
+
+input {
+    accent-color: blue;
+}
+
+.title {
+    align-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(216, 248, 248);
+    height: 50px;
+    width: 1470x;
+    display:flex;
+    flex-wrap: wrap;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-timing-function: 2;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+}
+
+@keyframes box {
+    0%{background-color:azure ;}
+    10%{background-color: aqua;}
+    20%{background-color: greenyellow;}
+    30%{background-color:salmon}
+    40%{background-color:blanchedalmond ;}
+    50%{background-color:aliceblue ;}
+    60%{background-color:orchid ;}
+    70%{background-color:bisque ;}
+    80%{background-color:royalblue ;}
+    90%{background-color:gold ;}
+    100%{background-color:crimson ;}
+    110%{background-color: azure;}
+
+}

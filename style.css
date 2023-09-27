@@ -1,6 +1,9 @@
 p1, p2, h1, h2, h3, h4, h5, ul, nav, th,td{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    word-spacing: normal;
+    white-space: normal;
+    text-indent: 10px;
 }
 
 p {
@@ -9,6 +12,12 @@ p {
     column-fill: balance;
     column-rule-style: solid;
     column-rule-color:black;
+    
+}
+
+p1{
+    margin-block-start:10px;
+    margin-block-end: 5px;
 }
 
 h1{
@@ -20,12 +29,27 @@ h1{
 
 }
 
+b1{
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 100;
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 body {
     background-color:#f8f8ff;
 }
 
 input {
     accent-color: blue;
+}
+
+img.volleyball{
+    max-height: fit-content;
+    max-width: fit-content;
+    object-fit: cover;
 }
 
 .title {
@@ -35,12 +59,12 @@ input {
     text-align: center;
     background-color: rgb(216, 248, 248);
     height: 50px;
-    width: 1470x;
+    width: 1470px;
     display:flex;
     flex-wrap: wrap;
     animation-name: box;
     animation-duration: 10s;
-    animation-timing-function: 2;
+    animation-timing-function: 2s;
     animation-delay: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -56,12 +80,33 @@ input {
     20%{background-color: greenyellow;}
     30%{background-color:salmon}
     40%{background-color:blanchedalmond ;}
-    50%{background-color:aliceblue ;}
-    60%{background-color:orchid ;}
-    70%{background-color:bisque ;}
-    80%{background-color:royalblue ;}
-    90%{background-color:gold ;}
-    100%{background-color:crimson ;}
-    110%{background-color: azure;}
+    50%{background-color:orchid ;}
+    60%{background-color:bisque ;}
+    70%{background-color:royalblue ;}
+    80%{background-color:gold ;}
+    90%{background-color:crimson ;}
+    100%{background-color: azure;}
 
+}
+.box2 {
+    background-color: ghostwhite;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    transition-property:width;
+    transition-delay: 0s;
+    transition-duration: 2s;
+    border: 3px solid black;
+    top: 90px;
+    overflow:hidden
+}
+
+.VideoGames:hover .box2 {
+    width:0px;
+}
+
+input {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: red;
 }

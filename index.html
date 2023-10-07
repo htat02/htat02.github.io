@@ -1,57 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="Personal Website">
-        <meta name="author" content="Henry Tat">
-        <title>Personal Website</title>
-    </head> 
-    <body>   
-    <header>
-        <div class="title">
-        <h1>Henry's Personal Website</h1>
-`    </header>
-        <nav>
-            <a href=index.html>Home</a>
-            <a href=hobbies.html>Hobbies&Interests</a>
-            <a href=contact.html>Contact</a>
-        </nav>
-        <img src="images/cs.png" alt="Computer Science Graphic" width="200">
-        <article>
-        <h2>About Me</h2>
-        <p1>My name is Henry and I am a Computer Science major at Cal Poly Pomona.<br>
-            Web development is one of the many interest I have in the area of computer science.<br>
-            My goal is to become a software engineer at a Big Tech company.</p1>
-        </article>
-            <hr>
-        <h3>Hobbies and Interests</h3>
-        <b>These are my current hobbies and interests: </b>
-        <picture>
-            <br>
-        <img src="images/videogames.png" alt="Video Games" width="100">
-        </picture>
-        <img src="images/music.png" alt="Music" width="100">
-        <img src="images/sports.png" alt="Sports" width="100">
-        <ul>
-            <li>Video Games</li>
-            <li>Music</li>
-            <li>Sports</li>
-        </ul>
-        <a href="hobbies.html">To know more...</a>
-        <hr> 
-        <div>
-        <h4>Contact Info</h4>
-        <p2>Email: htat@cpp.edu<br>
-            Discord: TatisTat<br>
-            LinkedIn: <a href=https://www.linkedin.com/in/henry-tat-85a3b3251>https://www.linkedin.com/in/henry-tat-85a3b3251/</a><br>
-        </p2>
-        </div>
-        <h5>Thoughts and Opinion</h5>
-        <p1>To give your thoughts and opinions on the site  <a href=contact.html>Click here</a></p1>   
-    <footer>
-        <hr>
-        <b1>This website is made for HW1 of CS2250</b1>
-    </footer>
-    </body>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button onclick="appendNum('7')">7</button>
+        <button onclick="appendNum('8')">8</button>
+        <button onclick="appendNum('9')">9</button>
+        <button class="arithmetic" onclick="arithmetic('+')">+</button>
+
+        <button onclick="appendNum('4')">4</button>
+        <button onclick="appendNum('5')">5</button>
+        <button onclick="appendNum('6')">6</button>
+        <button class="arithmetic" onclick="arithmetic('-')">-</button>
+
+        <button onclick="appendNum('1')">1</button>
+        <button onclick="appendNum('2')">2</button>
+        <button onclick="appendNum('3')">3</button>
+        <button class="arithmetic" onclick="arithmetic('x')">x</button>
+
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="appendNum('0')">0</button>
+        <button onclick="calculateResult()">=</button>
+        <button class="arithmetic" onclick="arithmetic('/')">/</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
